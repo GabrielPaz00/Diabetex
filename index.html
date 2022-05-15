@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="icon" href="favicon.png">
+	<link rel="stylesheet" type="text/css" href="estilos.css">
+	<title>Diabetex</title>
+	
+</head>
+<body>
+	<header>
+		<nav>
+			<div class="logo"> 
+				<img src="diabetex.png" align="left" id="logo">
+			</div>
+			<!--Lista-->
+			<ul class="nav_menu" align="right">
+				<li><a href="#info">Infomación</a></li>
+				<li><a href="#test">Test</a></li>
+			</ul>
+		</nav>
+	</header>
+	<article>
+		<a name="info"></a>
+		<div class="info" name="info">
+		<h2>¿Qué es la diabetes?</h2>
+		<p>Enfermedad unacrónica e irreversible del metabolismo en la que se produce un exceso de glucosa o azúcar en la sangre y en la orina; es debida a una disminución de la secreción de la hormona insulina o a una deficiencia de su acción.</p>
+		<div class="imagenes">
+			<img src="diabetes.jpeg" id="img-def">
+		</div>	
+		<p>Nuestro país ocupa el sexto lugar mundial en el número de personas que padecen diabetes, existen 542 mil niños que viven con diabetes tipo 1 y casi 78 mil infantes la desarrollan cada año.</p>
+		<br/>
+		<p>La situacion respecto a esta enfermedad es grave, usted podria padecerla o estar en riesgo de, es por eso que hemos desarrollado "Diabetex" un proyecto en donde atravez de una encuesta de puntuacion podremos determinar si usted padece o esta en riesgo de padecer diabetes para así proporcionarle los medios nesesarios para recibir ayuda medica a tiempo.</p>
+		<br/>
+		<div class="imagenes">
+			<img src="grafi.jpg">
+		</div>	
+		<br/>
+		</div>
+	</article>
+	<br><hr style="border-color: #754495;">
+	<br><br>
+	<!--Formulario-->
+	<a name="test"></a>
+	<h2 style="text-align: center; color: black;">Test</h2>
+	<p class="info" style="padding-right: 20px; padding-left: 20px;">La situación respecto a esta enfermedad es grave, usted podría padecerla o estar en riesgo de, es por eso que hemos desarrollado "Diabetex" un proyecto en donde a través de una encuesta de puntuación podremos determinar si usted padece o esta en riesgo de padecer diabetes para así proporcionarle los medios necesarios para recibir ayuda medica a tiempo.</p>
+	<form class="form" id="formulario">
+		<div>
+			<h2>Encuesta Diabetes</h2>
+			<p>A continuación le mostraremos dicha encuesta favor de contestarla con sinceridad para un resultado mas concreto. (Se aclara por parte del staff de Diabetex que sus datos serán usados únicamente con fines estadísticos).</p>
+			<br/>
+			<label for="act-f">¿Realizas alguna actividad fisica a la semana?</label>
+			<p>
+			<input type="radio" name="act-f" value="0"> Sí&nbsp;&nbsp;<br>
+			<input type="radio" name="act-f" value="1"> No&nbsp;&nbsp;<br>
+			</p>
+			<label for="frec-f">¿Sueles orinar con mucha frecuencia?</label>
+			<p>
+			<input type="radio" name="frec-f" value="1"> Sí&nbsp;&nbsp;<br>
+			<input type="radio" name="frec-f" value="0"> No&nbsp;&nbsp;<br>
+			</p>
+			<label for="fe-f">¿Con qué frecuencia consume alimentos vegetales o frutas?</label>
+			<p>
+			<input type="radio" name="fe-f" value="0"> Todos los días&nbsp;&nbsp;<br>
+			<input type="radio" name="fe-f" value="0"> De 4 a 5 días a la semana&nbsp;&nbsp;<br>
+			<input type="radio" name="fe-f" value="1"> De 1 a 3 días a la semana&nbsp;&nbsp;<br>
+			<input type="radio" name="fe-f" value="1"> Ningun día&nbsp;&nbsp;<br>
+
+			</p>
+			<label for="tipo-f">¿Tienes algun tipo de diabetes?</label>
+			<p>
+			<select id="select">
+				<option selected>Elije una opción</option>
+				<option value="1">Diabetes tipo1</option>
+				<option value="1">Diabetes tipo 2</option>
+				<option value="1">Diabetes gestacional</option>
+				<option value="0">No</option>
+			</select>
+			</p>
+			<label for="ant-f">¿Tiene antecedentes de familiares con diabetes?</label>
+			<p>
+			<input type="radio" name="ant-f" value="1"> Sí&nbsp;&nbsp;<br>
+			<input type="radio" name="ant-f" value="0"> No&nbsp;&nbsp;<br>
+			</p>
+			<button type="reset" class="reset" onclick="limpiar()">Reset</button>
+			<!--Restablece los campos a sus valores predetermidados-->
+			&nbsp;&nbsp;
+			<button type="button" class="calcular" onclick="calcular()">Siguiente</button>
+			<br>
+		</div>
+	</form>
+	<br>
+	<div align="center" class="resultado">
+		<h3>Resultado:&nbsp;&nbsp;<a id="resultado"></a></h3>
+	</div>
+	<br><br>
+	<a name="footer"></a>
+	<footer class="footer">
+		<h2 class="column">Si despues de realizar este test, crees que estas en rieso de padecer diabetes, el staff te recomienda que vistes alguna de las siguiente páginas:</h2>
+		<h2 class="column"><a href="https://www.hospitalsatelite.com/template4/index.php?id_clinica=3">Clínica De Diabetes y Prediabetes del Corporativo Hospital Satélite.</a></h2>
+		<h2 class="column"><a href="https://www.salud.cdmx.gob.mx/">Clinica Especializada en el Manejo Integral de la Diabetes Iztapalapa.</a></h2>
+		<h2 class="column"><a href="https://www.facebook.com/Uneme-Enfermedades-Cronicas-Fresnillo-130050167060960/">UNEME de Enfermedades Crónicas Fresnillo.</a></h2>
+	</footer>
+<script src="index.js"></script>
+</body>
+</html>
